@@ -1,0 +1,39 @@
+.section3{
+  padding-top: 38px;
+  padding-bottom: 10px;
+  background: url('../../img/sprites/png/bg-sect3.jpg') no-repeat center top #F4F5F4;
+  min-height: 543px;
+  &__wrapper{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    &__title{
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+      color: #000;
+
+    }
+    &__complications{
+      background: url('../../img/sprites/png/complications-bg.png') repeat-y;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      padding: 19px 27px 0;
+      margin: 42px 0 0 25px;
+        &__block{
+          display: inline-block;
+          vertical-align: top;
+          width: 345px;
+          &__text{
+            font-size: 24px;
+            line-height: 26px;
+            background: url('../../img/sprites/png/complications-danger.png') no-repeat left top;
+            padding: 15px 0 30px 60px;
+            text-align: start;
+            min-height: 36px;
+          }
+        }
+    }
+  }
+}

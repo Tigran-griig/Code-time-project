@@ -1,0 +1,20 @@
+
+body {
+  margin: 0;
+
+  font-family: Arial,sans-serif;
+}
+
+
+
+html, body, div, p, h1, h2, h3, h4, h5, h6, a, span, img, ol, ul, li, form, input {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  background: transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}

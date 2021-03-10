@@ -1,0 +1,245 @@
+.section1{
+  background: url("../../img/sprites/png/bg-sect1.jpg") no-repeat center bottom;
+  position: relative;
+  z-index: 2;
+  min-height: 744px;
+&__main-title{
+  color: #fff;
+  font-size: 46px;
+  line-height: 48px;
+  text-align: center;
+  padding-bottom: 11px;
+  font-weight: bold;
+  text-shadow: 3px 3px 8px rgba(81, 83, 84,0.6);
+}
+  &__title-small{
+    color: #fff;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    text-shadow: 3px 3px 8px rgba(81, 83, 84,  0.6);
+  }
+  @media screen and (max-width: 1000px){
+    &__sec-wrap{
+      justify-content: center!important;
+    }
+  }
+  &__sec-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    &__box-center{
+      width: 298px;
+      position: relative;
+      z-index: 2;
+      &__img{
+        position: absolute;
+        top: 17px;
+        left: -51px;
+        z-index: -1;
+        background: url("../../img/sprites/png/product.png") no-repeat 0 0;
+        width: 324px;
+        height: 383px;
+        background-size: cover;
+      }
+    }
+    @media screen and(max-width: 650px) {
+      &__box-right{
+        margin-top: 50px;
+      }
+    }
+    &__box-right{
+      position: relative;
+      z-index: 20;
+      margin-right: 14px;
+      width: 276px;
+      padding: 4px;
+      background: url("../../img/sprites/png/bg-small-form-top.png") repeat;
+      box-shadow: 5px 6px 9px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      &__form-input{
+        padding: 0 16px;
+        &__input{
+            width: 100%!important;
+            border: none!important;
+            box-shadow: inset 1px 2px 0 0 rgba(0,0,0,0.35)!important;
+            padding: 0 14px!important;
+            height: 40px!important;
+            color: #000!important;
+            font-size: 14px!important;
+            background: #fff!important;
+            -webkit-border-radius: 5px!important;
+            -moz-border-radius: 5px!important;
+            border-radius: 5px!important;
+            margin-bottom: 20px!important;
+            font-family: Arial,sans-serif!important;
+            outline: none!important;
+        }
+        &__btn:hover{
+          opacity: 0.9!important;
+        }
+        &__btn{
+          width: 100% !important;
+          border: none!important;
+          -webkit-border-radius: 9px!important;
+          -moz-border-radius: 9px!important;
+          border-radius: 9px!important;
+          background: url('../../img/sprites/png/bg-submit.png') repeat-x!important;
+          height: 72px!important;
+          color: #fff!important;
+          font-size: 24px!important;
+          line-height: 26px!important;
+          cursor: pointer!important;
+          font-family: Tahoma, Arial,sans-serif!important;
+          padding: 1px 2px 4px!important;
+          outline: none!important;
+          margin-top: 3px!important;
+        }
+      &__title{
+        color: #000;
+        font-size: 12px;
+        line-height: 12px;
+        font-style: italic;
+        padding: 23px 0 11px;
+      }
+      }
+      &__form::after{
+        content: ' ';
+        background: url('../../img/sprites/png/arrow.png') no-repeat 0 0;
+        width: 33px;
+        height: 53px;
+        position: absolute;
+        bottom: 63px;
+        left: -23px;
+      }
+      &__form{
+        border-radius: 8px;
+        padding: 17px 0 15px;
+        position: relative;
+        background: #EEFAF7;
+        &__price{
+          background: #C7DDDC;
+          margin: 0 -4px;
+          display: flex;
+          flex-direction: column;
+          font-size: 95%;
+          &__info{
+            padding: 6px 100px 8px 0;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            font-size: 95%;
+
+            &__title{
+              color: #f93e0f;
+              font-size: 22px;
+              line-height: 14px;
+              padding-bottom: 2px;
+
+            }
+            &__price{
+
+              color: #f93e0f;
+              font-size: 38px;
+              line-height: 38px;
+              font-style: italic;
+              letter-spacing: -1px;
+            }
+
+          }
+          &__date{
+            padding: 15px 0 14px 0;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            &__info{
+              color: #000;
+              font-size: 18px;
+              line-height: 12px;
+              padding-bottom: 1px;
+            }
+            &__date{
+              color: #000;
+              font-size: 30px;
+              line-height: 30px;
+              font-style: italic;
+              position: relative;
+              letter-spacing: -1px;
+            }
+          }
+        }
+      }
+    }
+    @media screen and(min-width: 650px){
+      &__box-left{
+        width: 358px;
+      }
+    }
+    &__box-left{
+      padding-left: 14px;
+      margin-top: -10px;
+
+
+      &__block::before{
+        content: " ";
+        background: url("../../img/sprites/png/icon-do.png") no-repeat 0 0;
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        top: 57%;
+        margin-top: -24px;
+        left: 7px;
+      }
+      &__block-end::before{
+        content: " ";
+        background: url("../../img/sprites/png/icon-do.png") no-repeat 0 0;
+        width: 46px;
+        height: 46px;
+        position: absolute;
+        top: 57%;
+        margin-top: -24px;
+        left: 7px;
+      }
+      &__block{
+
+        color: #fff;
+        text-align: start;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 3px 0 10px 64px;
+        position: relative;
+        background: url("../../img/sprites/png/do-bg-bottom.png") no-repeat left bottom;
+        min-height: 46px;
+      }
+      &__block-end{
+        color: #fff;
+        text-align: start;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 3px 0 10px 64px;
+        position: relative;
+        min-height: 46px;
+      }
+    }
+  }
+}
+
+.section1:before {
+  background: url('../../img/sprites/png/for-form1.png') no-repeat 0 0;
+  width: 499px;
+  height: 73px;
+  position: absolute;
+  bottom: -1px;
+  right: 50%;
+  margin-right: -500px;
+  z-index: 15;
+}
+
+@media screen and(max-width: 670px){
+  .section1{
+    min-height: 1250px;
+    background-size:cover ;
+  }
+}
+

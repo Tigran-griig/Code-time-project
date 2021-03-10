@@ -1,0 +1,11 @@
+.section7{
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background: url("../../img/sprites/png/bg-sect7.jpg") no-repeat center top #033439;
+  background-size: cover;
+  &__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+  }
+}

@@ -1,0 +1,78 @@
+.section9{
+  padding-bottom: 65px;
+  padding-top: 30px;
+  background: #fff;
+  &__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+
+    &__title {
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+      color: #000
+    }
+&__work{
+  padding-top: 48px;
+  text-align: center;
+  .work-block--1:before {
+    background: url("../../img/sprites/png/work-img-1.png") 0 0 no-repeat;
+
+  }
+  .work-block--2:before {
+    background: url("../../img/sprites/png/work-img-2.png") 0 0 no-repeat;
+
+  }
+  .work-block--3:before {
+    background: url("../../img/sprites/png/work-img-3.png") 0 0 no-repeat;
+
+  }
+&__work-block:before {
+  content: " ";
+  background: url(http://demo.localtime-idea.com/demo_landings/dianot/dianot_ld6/img/work-img.png) no-repeat;
+  width: 191px;
+  height: 188px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -95px;
+}
+  &__work-block{
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
+    position: relative;
+    padding-top: 215px;
+    &__prof{
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: -1px;
+    }
+    &__name{
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: -1px;
+    }
+    &__text{
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: -1px;
+    }
+  }
+}
+  }
+
+}
+
+
+@media screen and(max-width: 900px){
+  .section9__wrapper__work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section9__wrapper__work__work-block{
+    margin-top:20px;
+  }
+}

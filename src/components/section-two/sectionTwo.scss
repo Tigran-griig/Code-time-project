@@ -1,0 +1,103 @@
+.section2{
+  padding-top: 28px;
+  padding-bottom: 55px;
+  background: url('../../img/sprites/png/bg-sect2.jpg') no-repeat center 32px;
+  position: relative;
+  z-index: 3;
+  &__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    &__title{
+      font-size: 36px;
+      line-height: 43px;
+      text-align: center;
+      color: #000;
+
+    }
+    &__reasons-wrap{
+      padding-top: 28px;
+      text-align: center;
+
+      &__block{
+        display: inline-block;
+        vertical-align: top;
+        width: 33%;
+        text-align: center;
+        position: relative;
+        padding-top: 104px;
+        padding-bottom: 40px;
+        margin: 0 -2px;
+        &__title{
+          font-size: 20px;
+          line-height: 26px;
+          font-weight: bold;
+          padding-bottom: 2px;
+        }
+        &__text{
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 24px;
+        }
+      }
+      &__block:before{
+        content: " ";
+        width: 93px;
+        height: 93px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -50px;
+      }
+      .block--1:before{
+        background-position: 0 0;
+        background: url('../../img/sprites/png/reasons-img-1.png');
+      }
+      .block--2:before{
+        background-position: 0 0;
+        background: url('../../img/sprites/png/reasons-img-2.png');
+      }
+      .block--3:before{
+        background-position: 0 0;
+        background: url('../../img/sprites/png/reasons-img-3.png');
+      }
+      .block--4:before{
+        background-position: 0 0;
+        background: url('../../img/sprites/png/reasons-img-4.png');
+      }
+      .block--5:before{
+        background-position: 0 0;
+        background: url('../../img/sprites/png/reasons-img-5.png');
+      }
+      .block--6:before{
+        background-position: 0 0;
+        background: url('../../img/sprites/png/reasons-img-6.png');
+      }
+    }
+  }
+}
+@media screen and(max-width: 767px) {
+  .section2__wrapper__reasons-wrap__block:before{
+    width: 125px;
+    height: 125px;
+    left: 47%;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+}
+.section2__wrapper__reasons-wrap__block{
+display: block;
+width: 98%;
+padding-top: 135px;
+padding-bottom: 37px;
+margin: 0 auto;
+&__text{
+  font-size: 24px;
+  line-height: 30px;
+}
+&__title{
+  font-size: 28px;
+  line-height: 33px;
+  padding-bottom: 9px;
+}
+}
+}

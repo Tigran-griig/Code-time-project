@@ -1,0 +1,21 @@
+.newPage{
+  &__cont{
+    margin: 0 auto;
+    text-align: center;
+    &__title{
+      color: #008c5b;
+      font-family: 'Lobster',arial,sans-serif;
+      font-size: 55px;
+      padding: 50px 0 0 0
+    }
+    &__text{
+      color:  #008c5b;;
+      font-family: 'Lobster',arial,sans-serif;
+      font-size: 34px;
+      padding: 10px 0 0 0;
+    }
+    &__desc{
+
+    }
+  }
+}

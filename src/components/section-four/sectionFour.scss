@@ -1,0 +1,102 @@
+.section4{
+  padding-top: 45px;
+  padding-bottom: 10px;
+  background: url('../../img/sprites/png/bg-sect4.jpg') no-repeat center top #E6E5E9;
+  min-height: 558px;
+  &__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    &__block{
+      font-size: 20px;
+      line-height: 28px;
+      padding: 3px;
+      margin: 29px 15px 0 246px;
+      background: url("../../img/sprites/png/bg-small-laboratory.png") repeat;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      position: relative;
+      z-index: 4;
+      &__text{
+        background: #fff;
+        padding: 18px 7px 26px 36px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        text-align: start;
+      }
+    }
+    &__block::before{
+      content: " ";
+      background: url('../../img/sprites/png/device-img.png') no-repeat 0 0;
+      width: 251px;
+      height: 374px;
+      position: absolute;
+      top: 45px;
+      left: -215px;
+    }
+    &__img{
+      position: relative;
+      z-index: 2;
+    }
+    &__img::after{
+      content: " ";
+      background: url("../../img/sprites/png/under-device.png");
+      width: 210px;
+      height: 225px;
+      position: absolute;
+      top: 17px;
+      left: 70px;
+    }
+    &__title{
+      font-size: 34px;
+      line-height: 43px;
+       text-align: center;
+       color: #000;
+}
+}
+}
+
+@media screen and(max-width:1000px ) {
+.section4{
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 215px;
+  &__wrapper{
+    max-width: 450px!important;
+
+    &__title{
+      line-height: 45px;
+      font-size: 34px;
+      margin: 0 auto!important;
+    }
+    &__img{
+      z-index: 5;
+    }
+    &__img::after{
+      width: 210px;
+      height: 225px;
+      position: absolute;
+      bottom: -68px;
+      left: 235px;
+      z-index: 4;
+      top: 350px;
+    }
+    &__block::before{
+      top: auto;
+      left: 37px;
+      bottom: -219px;
+      background-size: 227px;
+      z-index: 8!important;
+    }
+    &__block{
+      max-width: 450px;
+      margin: 0 auto!important;
+      &__text{
+        padding: 12px 10px 166px 16px;
+      }
+    }
+  }
+}
+}

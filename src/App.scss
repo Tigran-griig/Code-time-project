@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url("img/sprites/png/header-bg-top.png") repeat-x rgba(0,46,58,0.61);
+    padding-top: 6px;
+    padding-bottom: 1px;
+    z-index: 10;
+  @media screen and (max-width: 1150px){
+  &__container{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  }
+  &__container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    &__box{
+      &__btn:focus{
+        border: 0!important;
+      }
+      &__title{
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 0 4px;
+        min-height: 44px;
+        padding-left: 68px;
+        padding-top:12px;
+        text-align: left;
+        position: relative;
+      }
+      &__title::before{
+        content: " ";
+        background: url('./img/sprites/png/icon-header-box2.png') no-repeat 0 0;
+        width: 54px;
+        height: 44px;
+        position: absolute;
+        top: 15px;
+        left: 0;
+      }
+      &__btn{
+        color: #fff!important;
+        font-size: 26px!important;
+        line-height: 26px!important;
+        padding: 8px 55px 10px!important;
+        border-radius: 10px!important;
+        background: #FF3C01!important;
+        border: 0!important;
+        margin-top: 15px!important;
+        outline: none!important;
+      }
+    }
+
+   }
+}
+.wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  padding-top: 110px;
+}
+
+.text-top-section{
+  background:url("./img/sprites/png/text-bg1.png");
+
+  &__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    &__text{
+      font-size: 32px;
+      line-height: 44px;
+      text-align: center;
+      color: #fff;
+      padding: 15px 0;
+    }
+  }
+}
+
+
+.text-bottom-section{
+  background: #008c5b;
+  &__wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    &__text{
+      font-size: 26px;
+      line-height: 36px;
+      text-align: center;
+      color: #fff;
+      padding: 25px 0;
+    }
+  }
+}
+
+.modal-form{
+  position: relative;
+&__btn{
+background: transparent;
+  border: 0;
+  outline: 0;
+  &__icon{
+    content: " ";
+    position: absolute;
+    background: url("img/sprites/png/close.png") no-repeat 0 0;
+    width: 32px;
+    height: 32px;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 103;
+  }
+
+}
+}
